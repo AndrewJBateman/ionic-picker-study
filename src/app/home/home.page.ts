@@ -92,7 +92,8 @@ export class HomePage {
 			this.selected = [
 				game.options[game.selectedIndex].text,
 				cat.options[cat.selectedIndex].text,
-				rating.options[rating.selectedIndex].text];
+				rating.options[rating.selectedIndex].text
+			];
 		});
 	}
 }
