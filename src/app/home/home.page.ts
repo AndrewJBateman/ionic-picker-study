@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {PickerController} from '@ionic/angular';
-import {PickerOptions, PickerButton} from '@ionic/core';
+import {PickerOptions} from '@ionic/core';
 
 @Component({
 	selector: 'app-home',

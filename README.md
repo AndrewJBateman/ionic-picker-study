@@ -17,6 +17,8 @@ App created using the [Ionic 5 framework](https://ionicframework.com/docs) to us
 
 * Extract from the [Ion-picker](https://ionicframework.com/docs/api/picker) documentation: A Picker is a dialog that displays a row of buttons and columns underneath. It appears on top of the app's content, and at the bottom of the viewport.
 
+* No extra imported dependencies; picker controller component is part of ionic/angular, picker options component is part of ionic/core. Note: picker buttons components was not used.
+
 ## Screenshots
 
 ![image](./img/picker.png)
@@ -65,7 +67,7 @@ export interface PickerOptions {
 
 ## Inspiration
 
-Project inspired by [Simon Grimm´s Youtube video: Ionic Searchable Select Component Customisation](https://www.youtube.com/watch?v=SO_AWrrmZlY)
+Project inspired by [Simon Grimm´s Youtube video: How to Present a Picker Using the Ion Picker Component](https://www.youtube.com/watch?v=bEjw--B8jS0)
 
 ## Contact
 
