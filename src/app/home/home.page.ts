@@ -1,15 +1,15 @@
-import {Component} from '@angular/core';
-import {PickerController} from '@ionic/angular';
-import {PickerOptions} from '@ionic/core';
+import { Component } from "@angular/core";
+import { PickerController } from "@ionic/angular";
+import { PickerOptions } from "@ionic/core";
 
 @Component({
-	selector: 'app-home',
-	templateUrl: 'home.page.html',
-	styleUrls: ['home.page.scss']
+	selector: "app-home",
+	templateUrl: "home.page.html",
+	styleUrls: ["home.page.scss"],
 })
 export class HomePage {
-	framework = '';
-	selected = ['', '', ''];
+	framework = "";
+	selected = ["", "", ""];
 
 	constructor(private pickerCtrl: PickerController) {}
 
@@ -17,82 +17,82 @@ export class HomePage {
 		const opts: PickerOptions = {
 			buttons: [
 				{
-					text: 'Cancel',
-					role: 'Cancel'
+					text: "Cancel",
+					role: "Cancel",
 				},
 				{
-					text: 'Done'
-				}
+					text: "Done",
+				},
 			],
 			columns: [
 				{
-					name: 'framework',
+					name: "framework",
 					options: [
-						{text: 'Angular', value: 'A'},
-						{text: 'Vue', value: 'B'},
-						{text: 'React', value: 'C'}
-					]
-				}
-			]
+						{ text: "Angular", value: "A" },
+						{ text: "Vue", value: "B" },
+						{ text: "React", value: "C" },
+					],
+				},
+			],
 		};
 		const picker = await this.pickerCtrl.create(opts);
 		picker.present();
-		picker.onDidDismiss().then(async data => {
-			const col = await picker.getColumn('framework');
+		picker.onDidDismiss().then(async (data) => {
+			const col = await picker.getColumn("framework");
 			this.framework = col.options[col.selectedIndex].text;
 		});
 	}
 
 	async showAdvancedPicker() {
 		const opts: PickerOptions = {
-			cssClass: 'academy-picker',
+			cssClass: "academy-picker",
 			buttons: [
 				{
-					text: 'Cancel',
-					role: 'Cancel'
+					text: "Cancel",
+					role: "Cancel",
 				},
 				{
-					text: 'Done',
-					cssClass: 'special-done'
-				}
+					text: "Done",
+					cssClass: "special-done",
+				},
 			],
 			columns: [
 				{
-					name: 'game',
+					name: "game",
 					options: [
-						{text: 'Data', value: 'data'},
-						{text: 'WoW', value: 'wow'},
-						{text: 'CS', value: 'cs'}
-					]
+						{ text: "Data", value: "data" },
+						{ text: "Space", value: "space" },
+						{ text: "Atoms", value: "atoms" },
+					],
 				},
 				{
-					name: 'category',
+					name: "category",
 					options: [
-						{text: 'MOBA', value: 'MOBA'},
-						{text: 'MMORPG',
-						value: 'MMORPG'}
-					]
+						{ text: "MOBEL", value: "MOBEL" },
+            { text: "TEAL", value: "TEAL" },
+            { text: "WELLY", value: "WELLY" },
+					],
 				},
 				{
-					name: 'rating',
+					name: "rating",
 					options: [
-						{text: 'Good', value: '1'},
-						{text: 'Very Good', value: '2'},
-						{text: 'Excellent', value: '3'}
-					]
-				}
-			]
+						{ text: "Good", value: "1" },
+						{ text: "Great", value: "2" },
+						{ text: "Excellent", value: "3" },
+					],
+				},
+			],
 		};
 		const picker = await this.pickerCtrl.create(opts);
 		picker.present();
-		picker.onDidDismiss().then(async data => {
-			const game = await picker.getColumn('game');
-			const cat = await picker.getColumn('category');
-			const rating = await picker.getColumn('rating');
+		picker.onDidDismiss().then(async (data) => {
+			const game = await picker.getColumn("game");
+			const cat = await picker.getColumn("category");
+			const rating = await picker.getColumn("rating");
 			this.selected = [
 				game.options[game.selectedIndex].text,
 				cat.options[cat.selectedIndex].text,
-				rating.options[rating.selectedIndex].text
+				rating.options[rating.selectedIndex].text,
 			];
 		});
 	}

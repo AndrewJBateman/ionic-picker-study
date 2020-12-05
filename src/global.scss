@@ -14,9 +14,12 @@
     font-weight: 800 !important;
     color: #fff !important;
 }
- 
+
 .academy-picker {
-    --background: #f7e1f7;
+    --background: #e1f4f7;
+    --border-color: #2f32d8;
+    --border-width: 2px;
+    --width: 95%;
     --ion-text-color: rgb(59, 54, 54);
     .picker-opt-selected {
         color: rgb(23, 3, 141);
