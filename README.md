@@ -1,6 +1,6 @@
 # :zap: Ionic Picker Study
 
-* App created using the [Ionic 5 framework](https://ionicframework.com/docs) to use the [Ion-picker](https://ionicframework.com/docs/api/picker) component.
+* App created using the [Ionic framework](https://ionicframework.com/docs) to use the [Ion-picker](https://ionicframework.com/docs/api/picker) component.
 * Tutorial code from the [Ionic Academy](https://ionicacademy.com) with modifications - see [:clap: Inspiration](#clap-inspiration) below.
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
@@ -36,15 +36,15 @@
 
 ## :signal_strength: Technologies
 
-* [Ionic v5](https://ionicframework.com/)
-* [Angular v12](https://angular.io/)
-* [Ionic/angular v5](https://www.npmjs.com/package/@ionic/angular)
+* [Ionic v6](https://ionicframework.com/)
+* [Angular v13](https://angular.io/)
+* [Ionic/angular v6](https://www.npmjs.com/package/@ionic/angular)
 
 ## :floppy_disk: Setup
 
 * Run `npm i` to install dependencies
 * Run `ng lint` to lint files. All files pass linting.
-* To start the server on _localhost://8100_ type: 'ionic serve'
+* To start the server on _localhost://8100_ type: `ionic serve`
 
 ## :computer: Code Examples
 
@@ -72,7 +72,7 @@ export interface PickerOptions {
 
 ## :clipboard: Status & To-do list
 
-* Status: Working. Updated june 2021.
+* Status: Working.
 * To-do: try more of the functionality from the Ion-picker component.
 
 ## :clap: Inspiration
